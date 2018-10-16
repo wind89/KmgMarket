@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.Web", "EMarket.Web\EMarket.Web.csproj", "{F21B498D-567D-41C7-9531-BD5A5E30F52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.DAL", "EMarket.DAL\EMarket.DAL.csproj", "{06163F33-D200-4DF0-8286-84638E6FCF83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.DAL.Interfaces", "EMarket.DAL.Interfaces\EMarket.DAL.Interfaces.csproj", "{5893A481-E7F0-4D97-A881-B51A88B9A956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.DAL.Module", "EMarket.DAL.Module\EMarket.DAL.Module.csproj", "{5AE42082-F658-4213-897E-B9A31622BD25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.BLL", "EMarket.BLL\EMarket.BLL.csproj", "{7519E877-CFEB-416C-84D7-F482D3635A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.BLL.Interfaces", "EMarket.BLL.Interfaces\EMarket.BLL.Interfaces.csproj", "{0E2D0169-FBB0-4D9A-8F61-0C750C8939BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.BLL.Module", "EMarket.BLL.Module\EMarket.BLL.Module.csproj", "{2BB24995-EED8-4B3A-9ACD-DC737E444F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMarket.Domain", "EMarket.Domain\EMarket.Domain.csproj", "{83201DF4-D418-4DAB-B8D3-B042A2A31943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F21B498D-567D-41C7-9531-BD5A5E30F52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21B498D-567D-41C7-9531-BD5A5E30F52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21B498D-567D-41C7-9531-BD5A5E30F52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21B498D-567D-41C7-9531-BD5A5E30F52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06163F33-D200-4DF0-8286-84638E6FCF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06163F33-D200-4DF0-8286-84638E6FCF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06163F33-D200-4DF0-8286-84638E6FCF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06163F33-D200-4DF0-8286-84638E6FCF83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5893A481-E7F0-4D97-A881-B51A88B9A956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5893A481-E7F0-4D97-A881-B51A88B9A956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5893A481-E7F0-4D97-A881-B51A88B9A956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5893A481-E7F0-4D97-A881-B51A88B9A956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE42082-F658-4213-897E-B9A31622BD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE42082-F658-4213-897E-B9A31622BD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE42082-F658-4213-897E-B9A31622BD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE42082-F658-4213-897E-B9A31622BD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7519E877-CFEB-416C-84D7-F482D3635A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7519E877-CFEB-416C-84D7-F482D3635A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7519E877-CFEB-416C-84D7-F482D3635A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7519E877-CFEB-416C-84D7-F482D3635A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2D0169-FBB0-4D9A-8F61-0C750C8939BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2D0169-FBB0-4D9A-8F61-0C750C8939BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2D0169-FBB0-4D9A-8F61-0C750C8939BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2D0169-FBB0-4D9A-8F61-0C750C8939BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB24995-EED8-4B3A-9ACD-DC737E444F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB24995-EED8-4B3A-9ACD-DC737E444F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB24995-EED8-4B3A-9ACD-DC737E444F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB24995-EED8-4B3A-9ACD-DC737E444F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83201DF4-D418-4DAB-B8D3-B042A2A31943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83201DF4-D418-4DAB-B8D3-B042A2A31943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83201DF4-D418-4DAB-B8D3-B042A2A31943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83201DF4-D418-4DAB-B8D3-B042A2A31943}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7544659-C3D0-4B7C-9E66-4B18A80405D2}
+	EndGlobalSection
+EndGlobal

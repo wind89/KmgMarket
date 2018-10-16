@@ -1,0 +1,43 @@
+﻿@model EMarket.Domain.ViewModels.Product.AddProductViewModel
+
+<h3>Добавление товара</h3>
+@if (Model.Id != null)
+{
+    <div class="alert alert-success">
+        Товар успешно добавлен.
+    </div>
+}
+<form class="form" id="formAddProduct" action="/product/add" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="CategoryId" class="control-label">Категория</label>
+        <select class="form-control" id="categoriesDropdown" asp-for="CategoryId" onchange="productHelper.onChangeCategory()">
+            <option value="">Выберите категорию</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label asp-for="Name" class="control-label">Наименование</label>
+        <input type="text" class="form-control"  asp-for="Name" placeholder="Наименование">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label asp-for="Price" class="control-label">Цена</label>
+        <input type="number" class="form-control" asp-for="Price" placeholder="Цена">
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label asp-for="Description" class="control-label">Описание</label>
+        <textarea class="form-control" asp-for="Description" placeholder="Описание"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div>
+        <h4>Дополнительные параметры </h4>
+        <div id="parametersContainer" class="form-inline"></div>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Добавить</button>
+    
+</form>

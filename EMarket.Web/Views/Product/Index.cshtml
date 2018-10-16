@@ -1,0 +1,29 @@
+﻿@model List<EMarket.Domain.ViewModels.Category.CategoryViewModel>
+<h3>Поиск товаров</h3>
+<div style="margin-bottom: 10px;">
+    <a href="/product/add" class="btn btn-primary">Добавить товар</a>
+</div>
+<form class="form-inline" id="formSearchProduct" onsubmit="productHelper.search(); return false;">
+    <div class="form-group mb-2">
+        <select  class="form-control" id="categoriesDropdown" name="categoryId" onchange="productHelper.onChangeCategory()">
+            <option value="">Выберите категорию</option>
+            @foreach(var category in Model)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <input type="text" class="form-control" name="SearchText" placeholder="Строка поиска"> 
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Поиск</button>
+    <div>
+        <h5>Дополнительные параметры поиска:</h5>
+        <div id="parametersContainer" class="form-inline"></div>
+    </div>
+</form>
+<div>
+    <h4>Результаты поиска:</h4>
+    <div id="results">
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@model EMarket.Domain.ViewModels.Product.ProductViewModel
+<h3>Информация о товаре</h3>
+<div class=" row">
+   <div class="col-sm-2">
+       <div class="form-group mx-sm-3 mb-2">
+           <img src="~/images/nophoto.jpg" width="100%" />
+       </div>
+   </div>
+    <div class="col-sm-10 form-horizontal">
+        <div class="form-group mx-sm-3 mb-2">
+            <label>Наименование: </label>
+            <span>@Model.Name</span>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label>Цена: </label>
+            <span>@Model.Price</span>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label>Категория: </label>
+            <span>@Model.Category.Name</span>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label>Описание: </label>
+            <span>@Model.Description</span>
+        </div>
+        @foreach (var property in Model.Properties)
+        {
+            <div class="form-group mx-sm-3 mb-2">
+                <label>@property.Name </label>
+                <span>@property.Value </span>
+            </div>
+        }
+    </div>
+    
+  
+</div>

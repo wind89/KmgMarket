@@ -1,0 +1,31 @@
+﻿@model EMarket.Domain.ViewModels.Category.AddCategoryViewModel
+
+<div>
+    <h4>Добавление категории</h4>
+    @if (Model.Id != null)
+    {
+        <div class="alert alert-success">
+            Категория успешно добавлена.
+        </div>
+    }
+    <form action="/Category/Add" method="post">
+        <div class="form-group">
+            <label for="name">Наименование</label>
+            <label asp-for="Name" class="control-label">Наименование</label>
+            <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Наименование">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <a class="btn btn-primary" onclick="categoryHelper.addProperty()">Добавить дополнительное свойство</a>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Наименование</th>
+                </tr>
+            </thead>
+            <tbody id="properties">
+
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+</div>
