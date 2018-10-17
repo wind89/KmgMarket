@@ -49,3 +49,7 @@ var productHelper = new function () {
         return false;
     }
 }
+
+$(document).ready(function () {
+    productHelper.search();
+});
